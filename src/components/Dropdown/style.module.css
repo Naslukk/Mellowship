@@ -1,0 +1,65 @@
+.dropdown {
+    position: relative;
+    min-width: 160px;
+}
+.dropdown:hover .selector span {
+    color: #ffffff;
+}
+
+.selector {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 40px;
+    background: rgba(255, 255, 255, 0.04);
+    border-radius: 4px;
+    padding: 0 10px;
+    cursor: pointer;
+}
+
+.selector span {
+    color: #9E9E9E;
+    font-size: 14px;
+    flex: 1;
+}
+
+.divider {
+    height: 60%;
+    width: 1px;
+    background-color: #9E9E9E;
+    margin: 0 8px;
+}
+
+.arrow {
+    width: 20px;
+    height: 20px;
+    transition: transform 0.2s ease;
+}
+
+.rotate {
+    transform: rotate(180deg);
+}
+
+.menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.04);
+    border: none;
+    border-radius: 6px;
+    padding: 5px 0;
+    z-index: 10;
+    list-style: none;
+    margin-top: 2px;
+}
+
+.menu li {
+    padding: 10px 12px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.menu li:hover {
+    background: rgba(255, 255, 255, 0.1);
+}

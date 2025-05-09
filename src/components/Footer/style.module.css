@@ -1,0 +1,27 @@
+.footerContainer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin: 20px 0;
+
+    .footerL img{
+        width: 40px;
+        height: 40px;
+    }
+    .footerR{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+}
+.footerContainer::after{
+    content: "";
+    filter: blur(144.6999969482422px);
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-repeat: repeat;
+    background: radial-gradient(100% 100% at 0% 80%, #01f77e, #7662fc00);
+    opacity: .1;
+}

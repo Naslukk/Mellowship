@@ -1,0 +1,69 @@
+.gustListContainer {
+    width: 100%;
+    margin-top: 20px;
+
+    h1 {
+        font-size: 18px;
+        font-weight: 600;
+    }
+
+    .searchBar {
+        width: 100%;
+        height: 35px;
+        border-radius: 8px;
+        background: rgba(255, 255, 255, 0.04);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        box-sizing: border-box;
+        margin-top: 20px;
+        display: flex;
+        align-items: center;
+        padding: 0 12px;
+        gap: 10px;
+
+        img {
+            width: 14px;
+            height: 14px;
+        }
+
+        input {
+            flex: 1;
+            background: transparent;
+            border: none;
+            outline: none;
+            color: #fff;
+            font-size: 14px;
+        }
+    }
+
+    .rowContainer {
+        margin-top: 20px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        h1 {
+            font-size: 18px;
+            font-weight: 600;
+        }
+
+        .buttonsContainer {
+            display: flex;
+            gap: 10px;
+            position: relative;
+            overflow: visible;
+
+            .button {
+                width: 125px;
+                height: 40px;
+                border-radius: 4px;
+                background: rgba(255, 255, 255, 0.04);
+                box-shadow: none;
+                outline: none;
+                border: none;
+                font-size: 13px;
+                font-weight: 400;
+            }
+        }
+    }
+}
