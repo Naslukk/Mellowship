@@ -1,7 +1,7 @@
 import React from "react";
 import style from "./style.module.css";
 import { Header } from "../../components/Header";
-import EventLogo from "../../assets/EventLogo.png";
+import EventLogo from "../../assets/eventLogo.png";
 import Arrow from "../../assets/arrow.svg";
 import DocIcon from "../../assets/doc.svg";
 import { Menu } from "../../components/Menu";
