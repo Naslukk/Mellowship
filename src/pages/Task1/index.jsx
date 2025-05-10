@@ -12,9 +12,11 @@ import ExportIcon from "../../assets/export.svg";
 import AddGustIcon from "../../assets/add_gust.svg";
 import GustList from "../../components/GuestsList";
 import Footer from "../../components/Footer";
+import { useNavigate } from "react-router-dom";
 
 
 function Task1() {
+  const navigate = useNavigate();
   return (
     <div className={style.mainContainer}>
       <Header />
@@ -22,7 +24,9 @@ function Task1() {
       <div className={style.innerContainer}>
         <div className={style.innerNav}>
           <div className={style.innerNavL}>
-            <button className={style.button}>
+            <button className={style.button}
+              onClick={() => navigate(`/`)}
+            >
               <img
                 src={Arrow}
                 alt="arrow"

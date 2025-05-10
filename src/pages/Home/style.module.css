@@ -1,0 +1,67 @@
+.container {
+    padding: 40px 20px;
+    max-width: 900px;
+    margin: auto;
+}
+
+.container::before {
+    content: "";
+    filter: blur(144.6999969482422px);
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-repeat: repeat;
+    opacity: .5;
+    background: radial-gradient(50% 50% at 0% 0%, #7662fc, #7662fc00);
+    pointer-events: none;
+}
+
+.container::after {
+    content: "";
+    filter: blur(144.6999969482422px);
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-repeat: repeat;
+    background: radial-gradient(100% 100% at 0% 80%, #01f77e, #7662fc00);
+    opacity: .1;
+    pointer-events: none;
+}
+
+.heading {
+    font-size: 32px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.grid {
+    display: grid;
+    gap: 20px;
+}
+
+.card {
+    background: rgba(250, 250, 250, 0.04);
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid rgba(250, 250, 250, 0.1);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+
+    h3 {
+        color: #ffffff;
+        font-weight: 500;
+    }
+}
+
+.viewButton {
+    background: rgba(255, 255, 255, 0.07);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 500;
+}
