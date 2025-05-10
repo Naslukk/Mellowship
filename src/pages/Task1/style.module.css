@@ -17,6 +17,18 @@
     background: radial-gradient(50% 50% at 0% 0%, #7662fc, #7662fc00);
 }
 
+.mainContainer::after{
+    content: "";
+    filter: blur(144.6999969482422px);
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-repeat: repeat;
+    background: radial-gradient(100% 100% at 0% 80%, #01f77e, #7662fc00);
+    opacity: .1;
+    pointer-events: none;
+}
+
 .innerContainer {
     width: 100%;
     max-width: 80rem;
@@ -46,7 +58,6 @@
         width: 40px;
         height: 32px;
         color: #ffffff;
-        background: rgba(255, 255, 255, 0.04);
         border: none;
         border-radius: 11px;
         padding: 12px;
@@ -55,6 +66,12 @@
         align-items: center;
         gap: 8px;
         cursor: pointer;
+        background: rgba(255, 255, 255, 0.04);
+        transition: all 0.3s ease;
+    }
+
+    .button:hover {
+        background-color: rgba(255, 255, 255, 0.1);
     }
 
     h1 {
@@ -193,17 +210,80 @@
             font-size: 17px;
             font-weight: 500;
             border-radius: 8px;
-            cursor: pointer ;
+            cursor: pointer;
             width: 25%;
             height: 50px;
             border: 2px solid rgba(255, 255, 255, 0.02);
+            transition: all 0.3s ease;
 
             img {
                 width: 20px;
                 height: 20px;
             }
         }
+
+        .button:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+        }
     }
 
 
+}
+
+@media (max-width: 768px) {
+    .mainContainer {
+        padding: 10px;
+    }
+
+    .innerContainer {
+        margin-top: 1rem;
+    }
+
+    .innerNav {
+        display: grid;
+        justify-items: end;
+        justify-content: space-around;
+        row-gap: .5rem;
+    }
+
+    .innerNavL {
+        gap: 10px;
+
+        h1 {
+            font-size: 17px;
+        }
+
+        img {
+            width: 40px;
+            height: 40px;
+        }
+    }
+
+    .programDataContainer {
+
+        .dataRow2 h1 {
+            font-size: 18px;
+        }
+
+        .dataRow2 h1 span {
+            font-size: 14px;
+        }
+
+        .dataRow4 ul {
+            display: grid;
+            gap: 10px 69px;
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        .buttonsRow {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+
+            .button{
+                width: 100%;
+                font-size: 14px;
+                gap: 8px;
+            }
+        }
+    }
 }

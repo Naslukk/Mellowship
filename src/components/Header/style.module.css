@@ -45,3 +45,15 @@ header{
     font-weight: 400;
     color: #999;
 }
+
+@media (max-width: 768px) {
+    header{
+        position: relative;
+    }
+    .headerContainer{
+        padding: 0;
+    }
+    .headerL span{
+   display: none;
+}
+}

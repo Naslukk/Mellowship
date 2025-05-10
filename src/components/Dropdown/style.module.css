@@ -21,6 +21,7 @@
     color: #9E9E9E;
     font-size: 14px;
     flex: 1;
+    transition: all 0.3s ease;
 }
 
 .divider {
@@ -45,7 +46,7 @@
     top: 100%;
     left: 0;
     width: 100%;
-    background: rgba(255, 255, 255, 0.04);
+    background: rgba(255, 255, 255,1);
     border: none;
     border-radius: 6px;
     padding: 5px 0;
@@ -58,8 +59,10 @@
     padding: 10px 12px;
     cursor: pointer;
     font-size: 14px;
+    color: #000111;
+    transition: all 0.3s ease;
 }
 
 .menu li:hover {
-    background: rgba(255, 255, 255, 0.1);
+    background: rgba(0, 0, 0, 0.1);
 }

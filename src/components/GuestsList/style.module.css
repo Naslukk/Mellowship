@@ -67,3 +67,16 @@
         }
     }
 }
+
+@media (max-width: 768px ){
+    .gustListContainer{
+        .rowContainer{
+            display: grid;
+            gap: 10px;
+
+            .buttonsContainer{
+                display: grid;
+            }
+        }
+    }
+}
